@@ -1,3 +1,4 @@
+# pt_br.py
 
 translations = {
     "preview.button.clear_all": "Limpar Tudo",
@@ -197,7 +198,7 @@ translations = {
     "anki_export.placeholder.source_folder": "Padrão: arquivos processados nesta sessão",
     "anki_export.button.select_source_folder": "Selecionar Pasta...",
     "anki_export.button.clear_source_folder": "Limpar",
-    "anki_export.button.list_media_files": "Listar Arquivos da Origem",
+    "anki_export.button.list_media_files": "Listar Arquivos da Fonte",
     "anki_export.button.add_to_anki": "Adicionar Itens Listados ao Anki",
     "anki_export.log.media_folder_not_defined": "Pasta de saída de mídia não definida.",
     "anki_export.log.media_folder_invalid": "Pasta de mídia '{path}' não é válida.",
@@ -309,4 +310,32 @@ translations = {
     "anki_export.radio.use_external_folder": "Usar pasta externa",
     "anki_export.button.select_source_folder": "Selecionar Pasta...",
     "anki_export.button.list_media_files": "Listar Arquivos da Fonte",
+
+    # --- Media Downloader Tab ---
+    "dl.group.url": "1. Insira a URL (YouTube, Facebook, Instagram, TikTok, etc.)",
+    "dl.placeholder.url": "Cole a URL da mídia aqui",
+    "dl.button.analyze": "Analisar Link",
+    "dl.group.save": "2. Escolha Onde Salvar",
+    "dl.radio.desktop": "Salvar na Área de Trabalho",
+    "dl.radio.custom_path": "Escolher outro local...",
+    "dl.placeholder.no_path": "Nenhum local selecionado",
+    "dl.button.browse": "Procurar...",
+    "dl.group.auth": "3. Autenticação (para sites que exigem login)",
+    "dl.radio.no_auth": "Nenhuma (padrão)",
+    "dl.radio.cookie": "Usar arquivo de cookies (.txt)",
+    "dl.placeholder.no_cookie": "Nenhum arquivo selecionado",
+    "dl.label.cookie_help": "<b>Como obter o arquivo de cookies:</b><br>1. Instale a extensão <b>'Cookie-Editor'</b> no Chrome/Firefox.<br>2. No navegador, <b>faça login no site</b> (ex: TikTok).<br>3. Com o site aberto, clique no ícone da extensão (🍪).<br>4. No popup, clique em <b>'Export'</b> <img src='{icon_path}' style='vertical-align: middle; height: 16px;'>.<br>5. Abra o Bloco de Notas, cole o texto e salve como um arquivo .txt.",
+    "dl.group.format": "4. Escolha o Formato e Opções",
+    "dl.checkbox.subs": "Baixar legendas (.srt) junto com o vídeo",
+    "dl.label.langs": "Idiomas:",
+    "dl.placeholder.langs": "Ex: pt ou pt-BR",
+    "dl.tooltip.langs": "Use 'pt' para Português. Se o vídeo tiver legenda em PT-BR, digite 'pt-BR'.",
+    "dl.tab.video": "Vídeo (MP4)",
+    "dl.tab.audio": "Áudio (MP3)",
+    "dl.group.queue": "5. Fila de Downloads",
+    "dl.table.url": "URL",
+    "dl.table.status": "Status",
+    "dl.table.progress": "Progresso",
+    "dl.button.start_queue": "Iniciar Fila",
+    "dl.button.clear_completed": "Limpar Concluídos",
 }

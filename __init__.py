@@ -907,6 +907,44 @@ class SimpleAudioSplitterDialog(QDialog):
         self.btn_list_files_anki.setText(self.tr("anki_export.button.list_media_files"))
         self.add_to_anki_button.setText(self.tr("anki_export.button.add_to_anki"))
 
+        # --- Retradução da Aba Downloader ---
+        if hasattr(self, 'dl_url_group'):
+            self.dl_url_group.setTitle(self.tr("dl.group.url"))
+            self.dl_url_input.setPlaceholderText(self.tr("dl.placeholder.url"))
+            if self.dl_analyze_button.isEnabled():
+                self.dl_analyze_button.setText(self.tr("dl.button.analyze"))
+
+            self.dl_save_group.setTitle(self.tr("dl.group.save"))
+            self.dl_desktop_radio.setText(self.tr("dl.radio.desktop"))
+            self.dl_custom_path_radio.setText(self.tr("dl.radio.custom_path"))
+            if not self.dl_custom_path_display.text():
+                self.dl_custom_path_display.setPlaceholderText(self.tr("dl.placeholder.no_path"))
+            self.dl_browse_button.setText(self.tr("dl.button.browse"))
+
+            self.dl_auth_group.setTitle(self.tr("dl.group.auth"))
+            self.dl_no_auth_radio.setText(self.tr("dl.radio.no_auth"))
+            self.dl_cookie_file_radio.setText(self.tr("dl.radio.cookie"))
+            if not self.dl_cookie_file_display.text():
+                self.dl_cookie_file_display.setPlaceholderText(self.tr("dl.placeholder.no_cookie"))
+            self.dl_browse_cookie_button.setText(self.tr("dl.button.browse"))
+
+            icon_path = os.path.join(addon_path, "export_icon.png").replace('\\', '/')
+            self.dl_cookie_help_label.setText(self.tr("dl.label.cookie_help", icon_path=icon_path))
+
+            self.dl_format_group.setTitle(self.tr("dl.group.format"))
+            self.dl_download_subs_checkbox.setText(self.tr("dl.checkbox.subs"))
+            self.dl_langs_label.setText(self.tr("dl.label.langs"))
+            self.dl_subs_langs_input.setPlaceholderText(self.tr("dl.placeholder.langs"))
+            self.dl_subs_langs_input.setToolTip(self.tr("dl.tooltip.langs"))
+
+            self.dl_tabs.setTabText(0, self.tr("dl.tab.video"))
+            self.dl_tabs.setTabText(1, self.tr("dl.tab.audio"))
+
+            self.dl_queue_group.setTitle(self.tr("dl.group.queue"))
+            self.dl_queue_table.setHorizontalHeaderLabels([self.tr("dl.table.url"), self.tr("dl.table.status"), self.tr("dl.table.progress")])
+            self.dl_start_queue_button.setText(self.tr("dl.button.start_queue"))
+            self.dl_clear_completed_button.setText(self.tr("dl.button.clear_completed"))
+
     def _get_safe_anki_media_dir(self) -> Optional[Path]:
         try:
             if mw and mw.col and mw.col.media and mw.col.media.dir():
@@ -1285,7 +1323,7 @@ class SimpleAudioSplitterDialog(QDialog):
                 if rate == 1.0:
                     self._play_media(original_path_str)
                 else:
-                    temp_filename = f"{original_path.stem}__{rate}x{original_path.suffix}"
+                    temp_filename = f"{original_path.stem}____{rate}x{original_path.suffix}"
                     temp_path = self.temp_preview_dir / temp_filename
                     
                     if temp_path.exists():
