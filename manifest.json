@@ -1,0 +1,13 @@
+{
+    "name": "Subne",
+    "package": "sub",
+    "author": "Eros",
+    "version": "1.0.0",
+    "description": "Um add-on para o Anki que baixa videos",
+    "ankiweb_id": null,
+    "conflicts": [],
+    "dependencies": [],
+    "homepage": "https://github.com/eros18123/SubFFmpeg",
+    "min_anki_version": "2.1.0",
+    "max_anki_version": null
+}
