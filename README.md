@@ -4,4 +4,4 @@ Baixe os outros arquivos no link para funcionar, que sao o yt-dlp e ffmpeg_vendo
 https://drive.google.com/drive/folders/1TFX4kf_sUHHONq8CPKzr_JD9hmAjPDw7?usp=sharing<br>
 
 Addon separado no link...<br>
-https://drive.google.com/file/d/1WQryn1yU_Q0PkRUetOpO1SeuRwePZ1s4/view?usp=sharing<br>
+https://drive.google.com/file/d/177BswnPRQvkGfrNfRWRgSu88wONEQl7V/view?usp=sharing<br>
